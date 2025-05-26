@@ -1,0 +1,68 @@
+<h2 class="titulo">Lista de Produtos</h2>
+
+<table class="tabela-listagem" border="1" cellspacing="0" cellpadding="5" style="width:100%; margin-bottom: 20px;">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Categoria</th>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Descrição</th>
+      <th>Imagem</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of produtos; trackBy: trackById">
+      <td>{{ produto.id }}</td>
+      <td>{{ produto.categoria }}</td>
+      <td>{{ produto.nome }}</td>
+      <td>{{ produto.preco | currency:'BRL' }}</td>
+      <td>{{ produto.descricao }}</td>
+      <td>
+        <img *ngIf="produto.imagem" 
+             [src]="'/images/' + produto.imagem" 
+             alt="{{ produto.nome }}" 
+             width="80" />
+      </td>
+      <td>
+        <button (click)="selecionarProduto(produto)">Editar</button>
+        <button (click)="excluirProduto(produto.id)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="form-produto" style="border: 1px solid #ccc; padding: 15px; max-width: 500px;">
+  <h3>{{ produtoSelecionado ? 'Editar Produto' : 'Adicionar Produto' }}</h3>
+
+  <label>
+    Categoria:<br>
+    <input [(ngModel)]="produtoFormulario.categoria" />
+  </label><br><br>
+
+  <label>
+    Nome:<br>
+    <input [(ngModel)]="produtoFormulario.nome" />
+  </label><br><br>
+
+  <label>
+    Preço:<br>
+    <input type="number" [(ngModel)]="produtoFormulario.preco" />
+  </label><br><br>
+
+  <label>
+    Descrição:<br>
+    <input [(ngModel)]="produtoFormulario.descricao" />
+  </label><br><br>
+
+  <label>
+    Imagem (nome do arquivo):<br>
+    <input [(ngModel)]="produtoFormulario.imagem" placeholder="ex: blusa1.png" />
+  </label><br><br>
+
+  <button *ngIf="produtoSelecionado" (click)="atualizarProduto()">Salvar</button>
+  <button *ngIf="produtoSelecionado" (click)="cancelarEdicao()" style="margin-left: 10px;">Cancelar</button>
+
+  <button *ngIf="!produtoSelecionado" (click)="adicionarProduto()">Adicionar</button>
+</div>

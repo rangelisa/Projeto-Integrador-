@@ -1,0 +1,90 @@
+.atendimento-container {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #eae4f1;
+  animation: fadeInUp 1s ease;
+}
+
+.titulo {
+  color: #4c1763; 
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  color: #cfc3dd;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.texto {
+  color: #ded3ea;
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+.horario {
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
+  color: #aa92c7;
+  font-weight: 500;
+}
+
+.contato-box {
+  background: linear-gradient(145deg, #302637, #3a2e49);
+  border-radius: 16px;
+  padding: 25px;
+  margin-top: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: #f4f1f8;
+}
+
+.contato-box h2 {
+  color: #b39ddb;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contato-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contato-box li {
+  margin: 12px 0;
+  font-size: 1rem;
+}
+
+.contato-box strong {
+  color: #dcd0f2;
+  font-weight: 600;
+}
+
+.contato-box a {
+  color: #cab4e6;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contato-box a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

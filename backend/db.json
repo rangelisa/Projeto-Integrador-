@@ -1,0 +1,132 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "categoria": "Blusas",
+      "nome": "Blusa 1",
+      "preco": 59.9,
+      "imagem": "blusa1.png",
+      "descricao": "Cropped Preto Babadinho"
+    },
+    {
+      "id": "2",
+      "categoria": "Blusas",
+      "nome": "Blusa 2",
+      "preco": 69.9,
+      "imagem": "blusa2.png",
+      "descricao": "Cropped Vermelho"
+    },
+    {
+      "id": "3",
+      "categoria": "Blusas",
+      "nome": "Blusa 3",
+      "preco": 89.9,
+      "imagem": "blusa3.png",
+      "descricao": "Cropped Vermelho"
+    },
+    {
+      "id": "4",
+      "categoria": "Blusas",
+      "nome": "Blusa 4",
+      "preco": 89.9,
+      "imagem": "blusa4.png",
+      "descricao": "Body Manga Cumprida"
+    },
+    {
+      "id": "5",
+      "categoria": "Calças",
+      "nome": "Calça 1",
+      "preco": 110.9,
+      "imagem": "calca1.png",
+      "descricao": "Calça Vermelha"
+    },
+    {
+      "id": "6",
+      "categoria": "Calças",
+      "nome": "Calça 2",
+      "preco": 120.9,
+      "imagem": "calca2.png",
+      "descricao": "Calça Marrom"
+    },
+    {
+      "id": "7",
+      "categoria": "Calças",
+      "nome": "Calça 3",
+      "preco": 130.9,
+      "imagem": "calca3.png",
+      "descricao": "Calça Oncinha"
+    },
+    {
+      "id": "8",
+      "categoria": "Calças",
+      "nome": "Calça 4",
+      "preco": 125.9,
+      "imagem": "calca4.png",
+      "descricao": "Calça Preta"
+    },
+    {
+      "id": "9",
+      "categoria": "Calçados",
+      "nome": "Calçado 1",
+      "preco": 185.9,
+      "imagem": "sapato1.png",
+      "descricao": "Salto Preto"
+    },
+    {
+      "id": "10",
+      "categoria": "Calçados",
+      "nome": "Calçado 2",
+      "preco": 195.9,
+      "imagem": "sapato2.png",
+      "descricao": "Salto Marrom"
+    },
+    {
+      "id": "11",
+      "categoria": "Calçados",
+      "nome": "Calçado 3",
+      "preco": 177.9,
+      "imagem": "sapato3.png",
+      "descricao": "Sapato Marrom"
+    },
+    {
+      "id": "12",
+      "categoria": "Calçados",
+      "nome": "Calçado 4",
+      "preco": 165.9,
+      "imagem": "sapato4.png",
+      "descricao": "Salto Bege"
+    },
+    {
+      "id": "13",
+      "categoria": "Acessórios",
+      "nome": "Acessório 1",
+      "preco": 99.9,
+      "imagem": "acessorio1.png",
+      "descricao": "Kit Colar Prata"
+    },
+    {
+      "id": "14",
+      "categoria": "Acessórios",
+      "nome": "Acessório 2",
+      "preco": 55.9,
+      "imagem": "acessorio5.png",
+      "descricao": "Kit Brincos Prata"
+    },
+    {
+      "id": "15",
+      "categoria": "Acessórios",
+      "nome": "Acessório 3",
+      "preco": 100.9,
+      "imagem": "acessorio3.png",
+      "descricao": "Relógio Prata"
+    },
+    {
+      "id": "16",
+      "categoria": "Acessórios",
+      "nome": "Acessório 4",
+      "preco": 99.9,
+      "imagem": "acessorio4.png",
+      "descricao": "Kit Pulseiras Pratas"
+    }
+  ]
+}

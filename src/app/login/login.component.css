@@ -1,0 +1,102 @@
+
+body {
+  background-color: #694c5c;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #835f70; 
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #f1f1f1; 
+}
+
+
+input {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1; 
+  color: black;
+  font-size: 1rem;
+}
+
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #493441;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.login-container > button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #493441;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.bem-vindo {
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.bem-vindo button {
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #493441;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.texto-branco {
+  color: white;
+  margin-top: 10px;
+  font-weight: normal; 
+}
+.ja-tenho-conta {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: white; 
+    text-decoration: none; 
+}
+
+.ja-tenho-conta:hover {
+    text-decoration: underline; 
+}

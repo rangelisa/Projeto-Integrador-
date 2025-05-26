@@ -1,0 +1,13 @@
+<div *ngFor="let categoria of categorias">
+  <h2 class="titulo">{{ categoria.nome }}</h2>
+
+  <div class="produtos-grid">
+    <div class="item" *ngFor="let produto of categoria.produtos">
+      <img [src]="produto.imagem" alt="{{ produto.nome }}">
+      <h3>{{ produto.nome }}</h3>
+      <p class="descricao">{{ produto.descricao }}</p>
+      <p>R$ {{ produto.preco | number: '1.2-2' }}</p>
+      <button class="comprar-btn" (click)="adicionarAoCarrinho(produto)">Adicionar</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="login-container" *ngIf="!usuarioLogado">
+
+  <form (ngSubmit)="onSubmit()">
+    <label>Email:</label>
+    <input [(ngModel)]="email" name="email" required />
+
+    <label>Senha:</label>
+    <input [(ngModel)]="senha" name="senha" type="password" required />
+
+    <button type="submit">
+      {{ modoCadastro ? 'Cadastrar' : 'Entrar' }}
+    </button>
+  </form>
+
+
+<p *ngIf="!modoCadastro" class="mensagem-cadastro">
+  <span class="texto-branco">Não tem uma conta?
+  <a href="#" (click)="modoCadastro = true; $event.preventDefault()"> Cadastre-se</a></span>
+</p>
+
+ 
+  <div *ngIf="modoCadastro">
+    <a href="#" class="ja-tenho-conta" (click)="modoCadastro = false; $event.preventDefault()">
+      Já tenho uma conta
+    </a>
+  </div>
+  
+</div>

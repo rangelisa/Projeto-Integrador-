@@ -1,9 +1,26 @@
-
 <nav class="menu">
-<ul>
-<li><a routerLink="/cadastrar" routerLinkActive="active">Cadastrar</a></li>
-<li><a routerLink="/consultar" routerLinkActive="active">Consultar</a></li>
-<li><a routerLink="/excluir" routerLinkActive="active">Excluir</a></li>
- <li><a routerLink="/listagem" routerLinkActive="active">Listar</a></li>
-</ul>
+  <div class="logo-wrapper">
+    <a routerLink="/home" class="logo logo-link">ROYAL FEMME</a>
+  </div>
+
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a routerLink="/home">HOME</a></li>
+      <li><a routerLink="/produtos">PRODUTOS</a></li>
+      <li><a routerLink="/sobre-nos">SOBRE NÓS</a></li>
+      <li><a routerLink="/atendimento">ATENDIMENTO</a></li>
+      <li *ngIf="isAdmin()"><a routerLink="/listagem">ADMIN</a></li>
+    </ul>
+
+    <div class="top-right-buttons">
+      <a *ngIf="!auth.estaLogado()" routerLink="/login" title="Entrar">🔐</a>
+
+      <span *ngIf="auth.estaLogado()" class="user-info">
+        Olá, {{ auth.getUsuario()?.email }}
+        <button (click)="logout()" title="Sair">🚪</button>
+      </span>
+
+      <a routerLink="/cart" title="Carrinho">🛒</a>
+    </div>
+  </div>
 </nav>

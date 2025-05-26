@@ -1,0 +1,36 @@
+<h1>Seu Carrinho</h1>
+
+<table *ngIf="agrupados.length > 0">
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Quantidade</th>
+      <th>Preço Unitário</th>
+      <th>Subtotal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of agrupados">
+      <td>{{ item.nome }}</td>
+      <td>
+        <button (click)="alterarQtd(item.nome, -1)">-</button>
+        {{ item.quantidade }}
+        <button (click)="alterarQtd(item.nome, 1)">+</button>
+      </td>
+      <td>R$ {{ item.preco | number: '1.2-2' }}</td>
+      <td>R$ {{ item.preco * item.quantidade | number: '1.2-2' }}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3"><strong>Total</strong></td>
+      <td><strong>R$ {{ total | number: '1.2-2' }}</strong></td>
+    </tr>
+  </tfoot>
+</table>
+
+<div *ngIf="agrupados.length === 0" class="vazio">
+  Seu carrinho está vazio.
+</div>
+
+<button (click)="finalizarPagamento()">Finalizar pagamento</button>
